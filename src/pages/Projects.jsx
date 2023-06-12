@@ -10,6 +10,9 @@ const Projects = () => {
         <div>
           <Link to="/wackamole">WACK-A-MOLE</Link>
         </div>
+        <div>
+          <Link to="/drumkit">Drum Kit</Link>
+        </div>
         
     </div>
   )

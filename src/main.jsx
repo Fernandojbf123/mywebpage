@@ -9,7 +9,7 @@ import SectionsLayout from './layouts/SectionsLayout'
 import AboutMe from './pages/AboutMe'
 import Projects from './pages/Projects'
 import WackApp from "./pages/wack-a-mole/WackApp"
-
+import DrumApp from './pages/drumkit/DrumApp'
 
 const router = createBrowserRouter([
   {
@@ -37,6 +37,10 @@ const router = createBrowserRouter([
   {
     path:'/wackamole',
     element: <WackApp />,
+  },
+  {
+    path:'/drumkit',
+    element: <DrumApp />,
   },
 ])
 
