@@ -1,5 +1,5 @@
 import "../styles/WackHeader.css"
-import ImgHero from "../files/background.png"
+import ImgHero from "/wackamolefiles/background.png"
 
 
 const Heading = ({score, totalMolesUp, setDificulty, setGameStart, timeLeft}) => {

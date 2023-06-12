@@ -10,7 +10,7 @@ const DrumApp = () => {
         <iframe
             width={windowWidth}
             height={windowHeight}
-            src="./src/pages/drumkit/index.html">
+            src="https://courageous-entremet-af03d9.netlify.app/">
         </iframe>
     </div>
   )

@@ -215,8 +215,8 @@ function WackApp() {
             
           ))}
         </div>
-        <audio id="boing" src="./src/pages/wack-a-mole/files/boing.mp3" ></audio>
-        <audio id="bgmusic" src="./src/pages/wack-a-mole/files/bgmusic.mp3"></audio>
+        <audio id="boing" src="/wackamolefiles/boing.mp3" ></audio>
+        <audio id="bgmusic" src="/wackamolefiles/bgmusic.mp3"></audio>
 
 
       </section>

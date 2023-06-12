@@ -1,4 +1,4 @@
-import ImgDirt from "../files/dirt.svg"
+import ImgDirt from "/wackamolefiles/dirt.svg"
 
 const Dirt = ({pos}) => {
 

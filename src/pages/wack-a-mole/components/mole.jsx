@@ -1,4 +1,4 @@
-import ImgMole from "../files/mole.svg"
+import ImgMole from "/wackamolefiles/mole.svg"
 
 const Mole = ({idx}) => {
   
