@@ -14,7 +14,7 @@ const Projects = () => {
           <Link to="/drumkit">Drum Kit</Link>
         </div>
         <div>
-          <Link to="www.bellodev/memory_js">Memory</Link>
+          <Link to="/memorama">Memorama game</Link>
         </div>
         
     </div>

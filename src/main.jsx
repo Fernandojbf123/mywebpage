@@ -10,6 +10,7 @@ import AboutMe from './pages/AboutMe'
 import Projects from './pages/Projects'
 import WackApp from "./pages/wack-a-mole/WackApp"
 import DrumApp from './pages/drumkit/DrumApp'
+import MemoramaApp from './pages/memorama/MemoramaApp'
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path:'/drumkit',
     element: <DrumApp />,
+  },
+  {
+    path:'/memorama',
+    element: <MemoramaApp />,
   },
 ])
 
