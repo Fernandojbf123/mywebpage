@@ -13,6 +13,9 @@ const Projects = () => {
         <div>
           <Link to="/drumkit">Drum Kit</Link>
         </div>
+        <div>
+          <Link to="www.bellodev/memory_js">Memory</Link>
+        </div>
         
     </div>
   )
