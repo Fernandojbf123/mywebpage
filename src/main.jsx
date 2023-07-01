@@ -14,6 +14,7 @@ import MemoramaApp from './pages/memorama/MemoramaApp'
 import FitnessApp from './pages/fitness-music/FitnessApp'
 import TeslaClone from './pages/tesla/TeslaClone'
 import CryptoApp from './pages/cryptoQuoter/cryptoApp'
+import BudgetApp from './pages/budget/BudgetApp'
 
 const router = createBrowserRouter([
   {
@@ -58,7 +59,11 @@ const router = createBrowserRouter([
     path:'/crypto-quoter',
     element: <CryptoApp />,
   },
-  
+
+  {
+    path:'/budget',
+    element: <BudgetApp />,
+  },
   
 
   {

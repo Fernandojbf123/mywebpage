@@ -7,12 +7,17 @@ const DrumApp = () => {
 
   return (
     <div>
+      <p className="text-2xl">NOTE: NO MOBILE VERSION AVAILABLE</p>
         <iframe
             width={windowWidth}
             height={windowHeight}
             src="https://courageous-entremet-af03d9.netlify.app/">
         </iframe>
+
+        
     </div>
+
+    
   )
 }
 

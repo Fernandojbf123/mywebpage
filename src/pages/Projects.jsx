@@ -68,6 +68,14 @@ const Projects = () => {
           </Link>
         </div>
 
+        <div className="md:w-2/6 w-4/5">
+          <Link to="/budget">
+            <p className='text1 w-full h-10 bg-green-300 text-2xl flex justify-center items-center rounded-md hover:bg-yellow-100 transition-colors ease-in-out'
+              >Budget App
+            </p>
+          </Link>
+        </div>
+
         
 
         <div>
