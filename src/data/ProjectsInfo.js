@@ -41,13 +41,13 @@ const projectName = [
     "",
     "https://graceful-mandazi-ffe61f.netlify.app/",
     "https://melodious-beignet-17ef4d.netlify.app/",
-    "https://monumental-concha-b85b56.netlify.app/",
+    "https://bellodev.com/details/projects",
     "https://effulgent-puffpuff-0708f4.netlify.app",
     "https://prismatic-sawine-066f99.netlify.app/",   
-    "https://inquisitive-mermaid-359825.netlify.app",
+    "/memorama",
     "https://coruscating-cajeta-1bb9f9.netlify.app/",
     "https://guitar-la-remix-two.vercel.app/",
-    "",
+    "/details/projects",
   ]
 
 import ImgCondo from "/Condo.png"

@@ -9,12 +9,12 @@ const Education = () => {
                            p-2 w-5/6"> Education </h2>
             <div className="md:mt-10 mt-3 w-5/6 flex flex-col mx-auto">
                 <details open={true} className='mt-10 cursor-pointer'>
-                    <summary className='text1 md:text-3xl text-xl text-gray-600'>College: Petroleum Engineer (2002-2009)</summary>
-                    <p className='text1 md:text-2xl text-gray-600'>During this period I used Visual Basic, Borland C. My bachelor's thesis was about an app to storage oil fields data in a friendly user interface. I used php, html, CSS, and MySQL</p>
+                    <summary className='text1 md:text-3xl text-xl text-gray-600'>Petroleum Engineer (2002-2009)</summary>
+                    <p className='text1 md:text-2xl text-gray-600'>I created an app to storage oil fields data in a friendly user interface using php, html, CSS, and MySQL</p>
                 </details>
                 <details open={true} className='mt-10 cursor-pointer'>
-                    <summary className='text1 md:text-3xl text-xl text-gray-600'>Master: Applied Geophysics (2012-2015)</summary>
-                    <p className='text1 md:text-2xl text-sm text-gray-600'>During this period I learn high level coding. I used Matlab to code a solver for coupled fluid flow and heat flow to model 2D geothermal reservoirs. After this I was able to work with NASA and ESA's (European Space Agency) satellite data</p>
+                    <summary className='text1 md:text-3xl text-xl text-gray-600'>(2012-2015)</summary>
+                    <p className='text1 md:text-2xl text-sm text-gray-600'>During this period I learned more about coding. I coded a coupled fluid flow and heat flow equations solver to model 2D geothermal reservoirs. After this I was able to work with NASA and ESA's (European Space Agency) using their satellital data. Also I </p>
                 </details>
                 <details open={true} className='mt-10 cursor-pointer'>
                     <summary className='text1 md:text-3xl text-xl text-gray-600'>Front end Developer (2021 up to date)</summary>

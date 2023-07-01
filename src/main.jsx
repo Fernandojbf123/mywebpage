@@ -11,6 +11,9 @@ import Projects from './pages/Projects'
 import WackApp from "./pages/wack-a-mole/WackApp"
 import DrumApp from './pages/drumkit/DrumApp'
 import MemoramaApp from './pages/memorama/MemoramaApp'
+import FitnessApp from './pages/fitness-music/FitnessApp'
+import TeslaClone from './pages/tesla/TeslaClone'
+import CryptoApp from './pages/cryptoQuoter/cryptoApp'
 
 const router = createBrowserRouter([
   {
@@ -40,12 +43,27 @@ const router = createBrowserRouter([
     element: <WackApp />,
   },
   {
+    path:'/memorama',
+    element: <MemoramaApp />,
+  },
+  {
     path:'/drumkit',
     element: <DrumApp />,
   },
   {
-    path:'/memorama',
-    element: <MemoramaApp />,
+    path:'/fitness',
+    element: <FitnessApp />,
+  },
+  {
+    path:'/crypto-quoter',
+    element: <CryptoApp />,
+  },
+  
+  
+
+  {
+    path:'/tesla',
+    element: <TeslaClone />,
   },
 ])
 

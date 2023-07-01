@@ -13,10 +13,10 @@ const FAQ = () => {
     Q[2]="Are you willing to relocate and do on site work"
     Q[3]="What can you tell me about your jobs?"
 
-    A[0]="I have 2 years of experience as Front end dev but I've been coding since my childhood using several coding lenguages such as Turbo Pascal, C++, php, Fortran, Matlab."
-    A[1]="I'm always learning. Coding languages and frameworks are always evolving, so I invest a lot of time and money in studies to keep the pace of the changes. Most latelly I'm learning about ChatGPT."
-    A[2]="Yes. My family and I are ready to move if it is needed."
-    A[3]="I've worked in several projects mostly in 'solo mode' since 2012. I've coded big projects working with data from NASA and ESA Satellites to detect eddies in the Gulf of Mexico, as well using High frecuency radars to detect shipwrecks or Sargazum in the Gulf of Mexico coast (coded in Matlab). In those projects I used the NASA's databases, created the University databases, coded the functions and all the algorithms for eddies detections and implemented functions from other researchers to improve the code. Since 2021 I decided to move onto web development and I've been working as freelancer making web applications and web pages."
+    A[0]="I have 2 years of experience as Frontend developer but I've been coding since my childhood using several coding lenguages such as Turbo Pascal, C++, php, Fortran, Matlab. Now I'm coding in JavaScript and I use Frameworks such as React, NextJS, TailwindCSS, and many more."
+    A[1]="I'm always learning since coding languages and frameworks are constantly evolving. Since you started reading this answer probably a new update was released"
+    A[2]="Yes. My family and I are ready to move as needed."
+    A[3]="I've worked in several projects mainly for engineernig and science. I've coded big projects for Research Centers in Mexico. I coded an App to detect eddies in the Gulf of Mexico using NASA's and ESA's (European Aerospace Agency) Satellital data. I also coded an App to detect eddies, shipwrecks or Sargazum using High frecuency radars data in the Gulf of Mexico coast. Since 2021 I decided to become a Frontend developer I've been working as freelancer making web applications and web pages. I've built several Apps and you can view some of them in the projects section. I'm sure you will find pretty interesting stuff."
 
     const [question, setQuestion] = useState(Q[0]);
     const [answer, setAnswer] = useState(A[0]);
@@ -83,7 +83,7 @@ const FAQ = () => {
                 </div>
                 <div className="changer-cointarner-text md:w-3/4 w-full">
                     <h1 className="text1 md:text-3xl text-xl text-gray-600">{question}</h1>
-                    <p className="text1 md:text-2xl text-sm text-gray-600">{answer}</p>
+                    <p className="text1 md:text-2xl text-sm text-gray-600 text-justify">{answer}</p>
                 </div>
                 <div className="w-1/5">
                     <img className="cursor-pointer m-auto" src={ImgRA} alt="right-arrow" onClick={changeManualRight}/>
