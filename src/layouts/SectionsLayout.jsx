@@ -6,10 +6,10 @@ const SectionsLayout = () => {
 
   return (
 
-        <div className='w-screen h-screen flex flex-col'>
+        <div className='w-screen md:h-screen h-auto flex flex-col justify-between'>
             
             <header className="px-1 py-6 flex w-full fixed top-0 z-30 md:px-10">  
-                    <div className="text-[1.1rem] font-bold text-gray-600 flex items-center drop-shadow-xl text2 px-4 md:text-3xl">
+                    <div className="md:text-[2rem] text-[1rem] font-bold text-gray-600 flex items-center drop-shadow-xl text2 px-4 md:text-3xl">
                         BELLODEV
                     </div>
                     <nav className="flex flex-grow justify-center items-center px-1 md:px-10 md:justify-end">
@@ -22,7 +22,7 @@ const SectionsLayout = () => {
                     </nav>
             </header>
 
-            <section className="bglayout md:overflow-y-scroll md:pt-[150px] md:pb-20 pt-20">
+            <section className="bglayout md:overflow-y-scroll md:pt-[150px] md:pb-20 pt-20 h-full">
                     <Outlet />
             </section>
 

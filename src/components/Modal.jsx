@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-
+import { Link } from "react-router-dom"
 import ImgClose from "/bx-x.svg"
 import ImgGmail from "/gmail-logo.png"
 import ImgLinked from "/linkedin-logo.png"
@@ -37,10 +37,9 @@ const Modal = ({modal,setModal}) => {
           onClick={handleModal}/>
 
         <div className="modal-buttons-menu">
-            <div className="button-ppl"><a href="#aboutme">About me</a></div>
+            <div className="button-ppl"><Link to="/details/aboutme">About me</Link></div>
             <div className="button-ppl"><a href="#faq">FAQ</a></div>
-            <div className="button-ppl"><a href="#projects">Projects</a></div>
-            <div className="button-ppl"><a href="#education">Education</a></div>
+            <div className="button-ppl"><Link to="/details/projects">Projects</Link></div>
             <div className="button-ppl"><a href="#contact">Contact</a></div>
 
             <div className="social-media w-full">

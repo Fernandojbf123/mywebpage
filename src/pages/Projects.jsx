@@ -98,6 +98,19 @@ const Projects = () => {
           </Link>
         </div>
 
+        <div>
+          Interviews request
+        </div>
+
+        <div className="md:w-2/6 w-4/5">
+          <Link to="/randomdatafromapi">
+            <p className='text1 w-full h-10 bg-orange-500 text-2xl flex justify-center items-center rounded-md hover:bg-yellow-100 transition-colors ease-in-out'
+              >Random Data from API
+            </p>
+          </Link>
+        </div>
+
+
        
 
 

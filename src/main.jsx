@@ -15,6 +15,7 @@ import FitnessApp from './pages/fitness-music/FitnessApp'
 import TeslaClone from './pages/tesla/TeslaClone'
 import CryptoApp from './pages/cryptoQuoter/cryptoApp'
 import BudgetApp from './pages/budget/BudgetApp'
+import RandomDataFromAPI from './pages/interviews/RandomDataFromAPI'
 
 const router = createBrowserRouter([
   {
@@ -69,6 +70,11 @@ const router = createBrowserRouter([
   {
     path:'/tesla',
     element: <TeslaClone />,
+  },
+
+  {
+    path:'/randomdatafromapi',
+    element: <RandomDataFromAPI />,
   },
 ])
 

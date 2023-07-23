@@ -7,7 +7,7 @@ const DrumApp = () => {
 
   return (
     <div>
-      <p className="text-2xl">NOTE: NO MOBILE VERSION AVAILABLE</p>
+      <p className="text-2xl">NOTE: MOBILE VERSION NOT AVAILABLE</p>
         <iframe
             width={windowWidth}
             height={windowHeight}
