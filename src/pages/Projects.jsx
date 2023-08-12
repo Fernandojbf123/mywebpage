@@ -1,15 +1,12 @@
-import { React, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { FacebookIcon, FacebookShareButton, TwitterIcon, TwitterShareButton, WhatsappIcon, WhatsappShareButton } from 'react-share'
+import LinkToProject from '../components/LinkToProject'
+import TitleOfProjectGroup from '../components/TitleOfProjectGroup'
 
 const Projects = () => {
   
-  const [bounce, setBounse] = useState(true)
-
-  useEffect ( () => {
-    setTimeout( () =>{
-      setBounse(false)
-    },1350)
-  },[]) 
+  
   
   return (
     
@@ -19,96 +16,101 @@ const Projects = () => {
           <h1 className='md:text-gray-600 text1 md:text-xl mt-2 text-gray-200'>Proyects using React & JavaScript</h1>
           <h2 className='md:text-gray-600 text2 md:text-2xl mt-2 text-gray-200'>Hello and welcome</h2>
           <p className='text-justify mt-2 px-5 font-bold'>Here you will find links to all the projects I've made as frontend developer. I hope you enjoy some of them :)</p>
+
+          <p className="mt-3 text2">If you'd like to share my portafolio just click the icons</p>
+          
+          <div className='mt-3 flex flex-row gap-2 justify-center'>
+            <FacebookShareButton url='https://www.bellodev.com' quote="This web page is awesome">
+              {<FacebookIcon size={32} round="true"/>}
+            </FacebookShareButton>
+
+            <TwitterShareButton url='https://www.bellodev.com
+Hey, this is a great frontend developer we should be working with :D ' >
+              {<TwitterIcon size={32} round="true"/>}
+            </TwitterShareButton>
+
+          <WhatsappShareButton url='https://www.bellodev.com 
+Hey, this is a great frontend developer we should be working with :D ' >
+            {<WhatsappIcon size={32} round="true" />}
+          </WhatsappShareButton>
+
+          </div>  
         </div>
 
-        <div>GAMES</div>
+        <TitleOfProjectGroup 
+          title = {"GAMES"}
+          textColor={"text-purple-500"}/>
 
-        <div className="md:w-2/6 mt-2 w-4/5">
-          <Link 
-            to="/wackamole">
-              <p className={`text1 w-full h-10 bg-blue-500 text-2xl flex justify-center items-center rounded-md hover:bg-yellow-100 transition-colors ease-in-out ${bounce && "animate-bounce"}`}
-                >WACK-A-MOLE
-              </p>
-            </Link>
+        <LinkToProject 
+          href={"/wackamole"}
+          name={"WACK-A-MOLE"}
+          bgColor={"bg-blue-500"}
+          animate={true}
+        />
+        <LinkToProject 
+          href={"/memorama"}
+          name={"Memorama game"}
+          bgColor={"bg-blue-400"}
+          animate={false}
+        />
+
+        <LinkToProject 
+          href={"/drumkit"}
+          name={"Drum Kit - PC Only"}
+          bgColor={"bg-cyan-500"}
+          animate={false}
+        />
+
+        <TitleOfProjectGroup 
+          title = {"APPS"}
+          textColor={"text-purple-500"}/>
+
+
+        <LinkToProject
+          href={"/fitness"}
+          name={"Fitness App"}
+          bgColor={"bg-green-500"}
+          animate={false}
+        />
+     
+        <LinkToProject
+          href={"/crypto-quoter"}
+          name={"Cryto Quoter"}
+          bgColor={"bg-green-400"}
+          animate={false}
+        />
+
+        <LinkToProject
+          href={"/budget"}
+          name={"Budget App"}
+          bgColor={"bg-green-300"}
+          animate={false}
+        />
+
+        <TitleOfProjectGroup 
+          title = {"WEB DESIGN"}
+          textColor={"text-purple-500"}/>
+  
+        <LinkToProject
+          href={"/tesla"}
+          name={"Tesla Web clone"}
+          bgColor={"bg-orange-500"}
+          animate={false}
+        />
+
+
+        <div className='mt-5'>
+          <h2 className='text2 text-purple-500 text-2xl'>Interviews request: AVAILABLE SOON</h2>
         </div>
+    
 
-        <div className="md:w-2/6 w-4/5">
-          <Link to="/memorama">
-            <p className='text1 w-full h-10 bg-blue-400 text-2xl flex justify-center items-center rounded-md hover:bg-yellow-100 transition-colors ease-in-out '
-              >Memorama game
-            </p>
-          </Link>
-        </div>
-
-
-        <div className="md:w-2/6 w-4/5">
-          <Link to="/drumkit">
-            <p className='text1 w-full h-10 bg-cyan-500 text-2xl flex justify-center items-center rounded-md hover:bg-yellow-100 transition-colors ease-in-out'
-              >Drum Kit
-            </p>
-          </Link>
-
-        </div>
-
-        <div>APPS</div>
-
-        <div className="md:w-2/6 w-4/5">
-          <Link to="/fitness">
-            <p className='text1 w-full h-10 bg-green-400 text-2xl flex justify-center items-center rounded-md hover:bg-yellow-100 transition-colors ease-in-out'
-              >Fitness App
-            </p>
-          </Link>
-        </div>
-
-        <div className="md:w-2/6 w-4/5">
-          <Link to="/crypto-quoter">
-            <p className='text1 w-full h-10 bg-green-400 text-2xl flex justify-center items-center rounded-md hover:bg-yellow-100 transition-colors ease-in-out'
-              >Cryto Quoter
-            </p>
-          </Link>
-        </div>
-
-        <div className="md:w-2/6 w-4/5">
-          <Link to="/budget">
-            <p className='text1 w-full h-10 bg-green-300 text-2xl flex justify-center items-center rounded-md hover:bg-yellow-100 transition-colors ease-in-out'
-              >Budget App
-            </p>
-          </Link>
-        </div>
-
-        
-
-        <div>
-          WEB DESIGN
-        </div>
-
-        <div className="md:w-2/6 w-4/5">
-          <Link to="/tesla">
-            <p className='text1 w-full h-10 bg-orange-500 text-2xl flex justify-center items-center rounded-md hover:bg-yellow-100 transition-colors ease-in-out'
-              >Tesla Web clone
-            </p>
-          </Link>
-        </div>
-
-        <div className="md:w-2/6 w-4/5">
-          <Link to="/tesla">
-            <p className='text1 w-full h-10 bg-orange-500 text-2xl flex justify-center items-center rounded-md hover:bg-yellow-100 transition-colors ease-in-out'
-              >Web Design
-            </p>
-          </Link>
-        </div>
-
-        <div>
-          Interviews request
-        </div>
-
-        <div className="md:w-2/6 w-4/5">
+        {/* <div className="md:w-2/6 w-4/5">
           <Link to="/randomdatafromapi">
             <p className='text1 w-full h-10 bg-orange-500 text-2xl flex justify-center items-center rounded-md hover:bg-yellow-100 transition-colors ease-in-out'
               >Random Data from API
             </p>
           </Link>
-        </div>
+        </div> */}
 
 
        

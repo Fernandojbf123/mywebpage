@@ -36,7 +36,7 @@ function App() {
       <ProjectCard />
 
       <div className='mt-20'>
-
+        <Education />
       </div>
 
       <Footer />

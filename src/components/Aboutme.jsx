@@ -39,7 +39,7 @@ const Aboutme = () => {
           </div>
           <div className="w-full flex flex-col justify-center align-middle md:w-4/6">
             <p className="md:text-4xl text-2xl font-bold text-gray-600 md:text-left text-center">I'm <span className="text-underline">Fernando Bello</span></p>
-            <p className="font-bold text-gray-600 mt-5 md:text-2xl md:w-full px-5 text-justify">an engineer with great experience in <span className="text-underline">REACT</span>, HTML, CSS and JAVASCRIPT.</p>
+            <p className="font-bold text-gray-600 mt-5 md:text-2xl md:w-full px-5 text-justify">an engineer since 2009 🔧 with great experience in <span className="text-underline">REACT</span>, HTML, CSS and JAVASCRIPT.</p>
             <div className="w-full flex flex-col justify-center items-center mt-10">
               <p className="text1">Want to know more about me and what am I doing?</p>
               <Link 
@@ -61,12 +61,12 @@ const Aboutme = () => {
               <tbody>
               <tr><td className="highlighted text1">HTML, CSS, JS</td></tr>
               <tr><td className="highlighted text1">React, Remix-Run, NextJS</td></tr>
-              <tr><td className="highlighted text1">Bootstrap, TailwindCSS</td></tr>              
+              <tr><td className="highlighted text1">TailwindCSS & Bootstrap</td></tr>              
               <tr><td className="highlighted text1">SQL, PostgreSQL, MongoDB, Cloudinary</td></tr>                   
               <tr><td className="highlighted text1">WordPress, Strapi</td></tr>
               <tr><td className="highlighted text1">NodeJS, PostMan</td></tr>
-              <tr><td className="highlighted text1">GitHub, GitLab, Jira y otros</td></tr>
-              <tr><td className="highlighted text1">Matlab, php, C, Fortran</td></tr>
+              <tr><td className="highlighted text1">GitHub, GitLab, Jira</td></tr>
+              <tr><td className="highlighted text1">Matlab</td></tr>
               </tbody>
             </table>
             

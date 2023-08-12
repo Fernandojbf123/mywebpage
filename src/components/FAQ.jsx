@@ -11,12 +11,10 @@ const FAQ = () => {
     Q[0]="How many years of experience as Front end Dev do I have?"
     Q[1]="Are you willing to learn new techs?"
     Q[2]="Are you willing to relocate and do on site work"
-    Q[3]="What can you tell me about your jobs?"
 
-    A[0]="I have 2 years of experience as Frontend developer but I've been coding since my childhood using several coding lenguages such as Turbo Pascal, C++, php, Fortran, Matlab. Now I'm coding in JavaScript and I use Frameworks such as React, NextJS, TailwindCSS, and many more."
+    A[0]="I have 3 years of experience as Frontend developer coding in JavaScript and using React, NextJS, Remix Run, Vite, TailwindCSS, Strapi & more. I've been coding since my childhood using several coding lenguages such as Turbo Pascal, C++, php, Fortran, Matlab."
     A[1]="I'm always learning since coding languages and frameworks are constantly evolving. Since you started reading this answer probably a new update was released"
     A[2]="Yes. My family and I are ready to move as needed."
-    A[3]="I've worked in several projects mainly for engineernig and science. I've coded big projects for Research Centers in Mexico. I coded an App to detect eddies in the Gulf of Mexico using NASA's and ESA's (European Aerospace Agency) Satellital data. I also coded an App to detect eddies, shipwrecks or Sargazum using High frecuency radars data in the Gulf of Mexico coast. Since 2021 I decided to become a Frontend developer I've been working as freelancer making web applications and web pages. I've built several Apps and you can view some of them in the projects section. I'm sure you will find pretty interesting stuff."
 
     const [question, setQuestion] = useState(Q[0]);
     const [answer, setAnswer] = useState(A[0]);

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import Footer from '../components/Footer'
 
@@ -9,8 +8,8 @@ const SectionsLayout = () => {
         <div className='w-screen md:h-screen h-auto flex flex-col justify-between'>
             
             <header className="px-1 py-6 flex w-full fixed top-0 z-30 md:px-10">  
-                    <div className="md:text-[2rem] text-[1rem] font-bold text-gray-600 flex items-center drop-shadow-xl text2 px-4 md:text-3xl">
-                        BELLODEV
+                    <div className="">
+                        <Link to={"/"} className='md:text-[2rem] text-[1rem] font-bold text-gray-600 flex items-center drop-shadow-xl text2 px-4 md:text-3xl'>BELLODEV</Link>
                     </div>
                     <nav className="flex flex-grow justify-center items-center px-1 md:px-10 md:justify-end">
                         <ul className=" [&>li]:md:text-xl
