@@ -15,7 +15,7 @@ const Aboutme = () => {
    
   
   return (
-    <div id="aboutme" className="w-full my-10 mx-auto flex flex-col
+    <div id="aboutme" className="w-full my-10 mx-auto flex flex-col 
                                  md:w-3/5 md:my-20 md:mx-auto">
         <div className="w-full flex flex-col justify-center items-center text-center">
             <h2 className="p-2 w-5/6 bg-yellow-300 rounded-xl text1 text-2xl

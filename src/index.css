@@ -12,11 +12,11 @@
 }
 
 .container-header {
-    background-image: linear-gradient(to top, rgba(245, 223, 78, 0.3) 0%, rgba(245, 223, 78, 0.8) 100%), url("/header.avif");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%), url("/City.gif");
 }
 
 .primary-menu{
-    background-image: linear-gradient(to top, rgba(245, 223, 78, 0.5) 0%, rgba(245, 223, 78, 0.8) 100%);
+    background-image: linear-gradient(to top, rgba(212, 78, 245, 0.8) 0%, rgba(212, 78, 245, 0.8) 100%);
 }
 
 .greet {

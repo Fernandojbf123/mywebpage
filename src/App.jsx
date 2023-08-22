@@ -17,7 +17,7 @@ function App() {
   return (
 
 
-    <div className="w-screen">
+    <div className="w-screen bg-gray-300">
     
       <Header 
         setModal={setModal}
@@ -30,11 +30,7 @@ function App() {
           modal   ={modal}
           setModal={setModal}/> 
         : ' ' }
-      
-      <FAQ />
-
-      <ProjectCard />
-
+ 
       <div className='mt-20'>
         <Education />
       </div>

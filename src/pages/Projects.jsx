@@ -98,10 +98,11 @@ Hey, this is a great frontend developer we should be working with :D ' >
           animate={false}
         />
 
+      <TitleOfProjectGroup 
+        title={"Interviews request: AVAILABLE SOON"}
+        textColor={"text-purple-500"}/>
+        
 
-        <div className='mt-5'>
-          <h2 className='text2 text-purple-500 text-2xl'>Interviews request: AVAILABLE SOON</h2>
-        </div>
     
 
         {/* <div className="md:w-2/6 w-4/5">
