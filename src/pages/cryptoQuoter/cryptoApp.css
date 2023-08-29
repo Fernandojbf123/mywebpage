@@ -1,0 +1,8 @@
+.cryptobody {
+    background-image: linear-gradient(135deg, rgb(129, 129, 170), rgb(3, 3, 31) );
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+  }

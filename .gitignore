@@ -23,9 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-src
-public
-index.html
 package-lock.json
 package.json
 postcss.config.js
