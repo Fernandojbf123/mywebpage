@@ -1,6 +1,7 @@
 import SmallBox from "./SmallBox"
 import useWeather from "../hooks/useWeather";
 import Spinner from "./Spinner";
+import { useRef } from "react";
 
 const CardModelOne = ({title}) => {
   

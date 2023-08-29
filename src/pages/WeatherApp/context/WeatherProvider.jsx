@@ -27,6 +27,7 @@ const WeatherProvider = ({children}) => {
             const response = await result.json();
             if (response.cod === "404"){
                 setHasData(false)
+                setDataFromAPI(response)
                 return 
             }
             setDataFromAPI(mapData(response))

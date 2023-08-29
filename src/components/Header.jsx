@@ -28,9 +28,9 @@ const Header = ({setModal}) => {
         <div className="greet md:w-3/5 md:h-auto flex md:flex-row md:justify-between md:items-center md:m-auto
                         h-auto flex-col-reverse items-center justify-center">
             <div className="h-auto flex flex-col my-0">
-                    <h1 className="text1 text-white md:text-5xl md:mt-10 text-3xl text-center md:text-left">Hi, I'm Fernando Bello</h1> 
-                    <h2 className="text2 text-white md:text-7xl font-bold md:mt-10 text-3xl text-center md:text-left">FRONTEND DEVELOPER</h2>
-                    <p className="text1 text-white md:text-2xl font-black md:mt-0 text-center md:text-left">HTML, CSS, JavaScript, React</p>
+                    <h1 className="text1 text-white md:text-5xl md:mt-10 text-3xl text-center md:text-left">{`Hi, I'm Fernando Bello`}</h1> 
+                    <h2 className="text2 text-white md:text-7xl font-bold md:mt-10 text-3xl text-center md:text-left">{`FRONTEND DEVELOPER`}</h2>
+                    <p className="text1 text-white md:text-2xl font-black md:mt-0 text-center md:text-left">{`HTML, CSS, JavaScript, React`}</p>
             </div>
            
         </div>

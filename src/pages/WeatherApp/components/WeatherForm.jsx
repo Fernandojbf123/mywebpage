@@ -2,7 +2,7 @@ import { useState } from "react";
 import useWeather from "../hooks/useWeather"
 const WeatherForm = () => {
     
-    const {formData, searchData, fetchData, dataFromAPI} = useWeather();
+    const {formData, searchData, fetchData} = useWeather();
     const {city, country } = formData;
 
     let [alertMsg, setAlertMsg] = useState("")

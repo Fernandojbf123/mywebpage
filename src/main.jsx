@@ -17,6 +17,7 @@ import CryptoApp from './pages/cryptoQuoter/cryptoApp'
 import BudgetApp from './pages/budget/BudgetApp'
 import RandomDataFromAPI from './pages/interviews/RandomDataFromAPI'
 import WeatherApp from './pages/WeatherApp/WeatherApp'
+import NewsApp from './pages/NewsApp/NewsApp'
 
 const router = createBrowserRouter([
   {
@@ -70,6 +71,11 @@ const router = createBrowserRouter([
   {
     path:'/weather',
     element: <WeatherApp />,
+  },
+
+  {
+    path:'/news',
+    element: <NewsApp />,
   },
 
   {

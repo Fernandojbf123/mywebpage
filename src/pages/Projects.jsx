@@ -73,6 +73,13 @@ Hey, this is a great frontend developer we should be working with :D ' >
           animate={false}
         />
 
+      <LinkToProject
+          href={"/news"}
+          name={"News App"}
+          bgColor={"bg-green-500"}
+          animate={false}
+        />
+
         <LinkToProject
           href={"/fitness"}
           name={"Fitness App"}

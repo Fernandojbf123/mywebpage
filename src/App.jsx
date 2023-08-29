@@ -17,11 +17,9 @@ function App() {
 
     <div className="w-screen bg-gray-300">
       
-      <div className="snap-center">
       <Header 
         setModal={setModal}
       />
-      </div>
 
       <Aboutme />
 
