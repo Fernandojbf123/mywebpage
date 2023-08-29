@@ -16,6 +16,7 @@ import TeslaClone from './pages/tesla/TeslaClone'
 import CryptoApp from './pages/cryptoQuoter/cryptoApp'
 import BudgetApp from './pages/budget/BudgetApp'
 import RandomDataFromAPI from './pages/interviews/RandomDataFromAPI'
+import WeatherApp from './pages/WeatherApp/WeatherApp'
 
 const router = createBrowserRouter([
   {
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
     element: <BudgetApp />,
   },
   
+  {
+    path:'/weather',
+    element: <WeatherApp />,
+  },
 
   {
     path:'/tesla',

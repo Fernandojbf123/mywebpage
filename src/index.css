@@ -157,12 +157,7 @@
 }
 
 .highlighted{
-    width: 150px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 10px;
     background-color: rgba(245, 223, 78, 0.8);
-    text-align: center;
 }
 
 .text1 {

@@ -22,7 +22,7 @@ const Education = () => {
                 </details>
 
                 <details open={true} className='mt-10 cursor-pointer'>
-                    <summary className='text1 md:text-3xl text-xl text-gray-600'>Certifies 2022</summary>
+                    <summary className='text1 md:text-3xl text-xl text-gray-600'>Certificates 2022</summary>
                         <tbody className="w-full flex-col">
                             <tr className="">
                                 <td className="p-2 align-top">

@@ -28,7 +28,7 @@ const Modal = ({modal,setModal}) => {
   return (
     <div>
         
-        <div className={`modal animenubefore ${show ? 'animenuafter' : ''}`}>
+        <div className={`modal animenubefore ${show ? 'animenuafter' : ''}`} onClick={handleModal}>
 
         <img 
           src={ImgClose} 
@@ -37,9 +37,8 @@ const Modal = ({modal,setModal}) => {
           onClick={handleModal}/>
 
         <div className="modal-buttons-menu">
-            <div className="button-ppl"><Link to="/details/aboutme">About me</Link></div>
-            <div className="button-ppl"><a href="#faq">FAQ</a></div>
-            <div className="button-ppl"><Link to="/details/projects">Projects</Link></div>
+            <div className="button-ppl"><Link to="/details/aboutme">Current Project</Link></div>
+            <div className="button-ppl"><Link to="/details/projects">Featured Projects</Link></div>
             <div className="button-ppl"><a href="#contact">Contact</a></div>
 
             <div className="social-media w-full">

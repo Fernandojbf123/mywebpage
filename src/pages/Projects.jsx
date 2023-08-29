@@ -13,7 +13,7 @@ const Projects = () => {
     <div className='w-full min-h-screen h-auto flex flex-col items-center text-center md:gap-3 gap-2'>
         <div className="md:w-2/6 md:[&>p]:text-gray-600 [&>p]:text-gray-200">
           <p className=' text1 mt-2'>@bellodev</p>
-          <h1 className='md:text-gray-600 text1 md:text-xl mt-2 text-gray-200'>Proyects using React & JavaScript</h1>
+          <h1 className='md:text-gray-600 text1 md:text-xl mt-2 text-gray-200'>Projects using React & JavaScript</h1>
           <h2 className='md:text-gray-600 text2 md:text-2xl mt-2 text-gray-200'>Hello and welcome</h2>
           <p className='text-justify mt-2 px-5 font-bold'>Here you will find links to all the projects I've made as frontend developer. I hope you enjoy some of them :)</p>
 
@@ -67,16 +67,25 @@ Hey, this is a great frontend developer we should be working with :D ' >
 
 
         <LinkToProject
-          href={"/fitness"}
-          name={"Fitness App"}
+          href={"/weather"}
+          name={"Weather App"}
           bgColor={"bg-green-500"}
           animate={false}
         />
+
+        <LinkToProject
+          href={"/fitness"}
+          name={"Fitness App"}
+          bgColor={"bg-green-400"}
+          animate={false}
+        />
+
+        
      
         <LinkToProject
           href={"/crypto-quoter"}
           name={"Cryto Quoter"}
-          bgColor={"bg-green-400"}
+          bgColor={"bg-green-300"}
           animate={false}
         />
 

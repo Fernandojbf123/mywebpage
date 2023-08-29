@@ -1,13 +1,12 @@
 
 import ImgHam from '/bx-menu.svg'
-import ImgProfile from "/foto2.png"
 
 const Header = ({setModal}) => {
 
   return (
       
-    <div className="container-header w-screen pb-10 h-auto bg-no-repeat bg-cover bg-fixed bg-center overflow-hidden
-                    md:h-screen md:w-screen">
+    <header className="container-header w-screen pb-10 h-auto bg-no-repeat bg-cover bg-fixed bg-center overflow-hidden
+                    md:h-screen md:w-screen snap-center">
     
         <nav className="primary-menu w-screen md:h-12 m-auto fixed min-12 block">
             <div className="md:w-3/5 md:mx-auto my-1 flex flex-row md:items-center md:justify-between
@@ -35,7 +34,7 @@ const Header = ({setModal}) => {
             </div>
            
         </div>
-    </div>
+    </header>
 
    
   )

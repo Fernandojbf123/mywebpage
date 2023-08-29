@@ -3,8 +3,6 @@ import { useState } from 'react'
 import Header from './components/Header'
 import Modal from './components/Modal'
 import Aboutme from './components/Aboutme'
-import FAQ from './components/FAQ'
-import ProjectCard from './components/ProjectCard'
 import Education from './components/Education'
 import Footer from './components/Footer'
 
@@ -18,10 +16,12 @@ function App() {
 
 
     <div className="w-screen bg-gray-300">
-    
+      
+      <div className="snap-center">
       <Header 
         setModal={setModal}
       />
+      </div>
 
       <Aboutme />
 
@@ -29,7 +29,8 @@ function App() {
         <Modal 
           modal   ={modal}
           setModal={setModal}/> 
-        : ' ' }
+      : ' ' 
+      }
  
       <div className='mt-20'>
         <Education />

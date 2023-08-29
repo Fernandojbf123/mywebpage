@@ -15,7 +15,7 @@ const SectionsLayout = () => {
                         <ul className=" [&>li]:md:text-xl
                                         flex gap-x-2 [&>li]:bg-yellow-400 [&>li]:rounded-md [&>li]:shadow-md [&>li]:text-gray-600 [&>li]:font-bold [&>li]:text-[0.7rem]">
                             <li className="hover:bg-yellow-50"><Link to="/" className="px-2 md:px-4">Index</Link></li>
-                            <li className="hover:bg-yellow-50"><Link to="/details/aboutme" className="px-2 md:px-4">About me</Link></li>
+                            <li className="hover:bg-yellow-50"><Link to="/details/aboutme" className="px-2 md:px-4">Current project</Link></li>
                             <li className="hover:bg-yellow-50"><Link to="/details/projects" className="px-2 md:px-4">Projects</Link></li>
                         </ul>
                     </nav>
