@@ -5,6 +5,7 @@ import Modal from './components/Modal'
 import Aboutme from './components/Aboutme'
 import Education from './components/Education'
 import Footer from './components/Footer'
+import IntroModal from './components/IntroModal'
 
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
   return (
 
 
-    <div className="w-screen bg-gray-300">
-      
+    <div className="w-full bg-gray-300 overflow-hidden">
+      <IntroModal />
+
       <Header 
         setModal={setModal}
       />

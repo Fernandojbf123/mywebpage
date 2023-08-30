@@ -15,7 +15,7 @@ const NewsShowCards = () => {
         </div>
     ):(
         hasData ? (
-            <div className='w-full md:w-2/3 md:mx-auto p-5 rounded-md flex flex-col md:flex-row gap-3 flex-wrap justify-center items-center bg-slate-200/30 backdrop-blur-sm mt-3'>
+            <div className='w-full md:w-5/6 md:mx-auto p-5 rounded-md flex flex-col md:flex-row gap-3 flex-wrap justify-center items-center bg-slate-200/30 backdrop-blur-sm mt-3'>
             
             
                 {newsData?.map( news => (
@@ -31,11 +31,11 @@ const NewsShowCards = () => {
                 }
                 
             
-                {/* <PageSelector /> */}
+                <PageSelector />
         
         </div>
         ):(
-            <div className='w-full md:w-2/3 md:mx-auto p-5 rounded-md flex flex-col md:flex-row gap-3 flex-wrap justify-center items-center bg-slate-200/30 backdrop-blur-sm mt-3'>
+            <div className='w-full md:w-5/6 md:mx-auto p-5 rounded-md flex flex-col md:flex-row gap-3 flex-wrap justify-center items-center bg-slate-200/30 backdrop-blur-sm mt-3'>
                 <p className="text-2xl text2">{message}</p>
             </div>
         )

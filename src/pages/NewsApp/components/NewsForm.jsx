@@ -14,7 +14,7 @@ const categories = [
 
 const NewsForm = () => {
 
-  const {formData, updateFormData, fetchNews} = useNewsProvider();
+  const {formData, updateFormData, updateCurrentPage ,fetchNews} = useNewsProvider();
   const {category} = formData;
 
   const [alertMsg, setAlertMsg] = useState("")
@@ -22,13 +22,16 @@ const NewsForm = () => {
   function handleSubmit (e) {
     e.preventDefault()
     setAlertMsg("")
+    const initialPage = 1;
+    updateCurrentPage(initialPage)
+
 
     if (!isFormDataValid(formData)){
         setAlertMsg("All fields are mandatory")
         return
     }
 
-    fetchNews(formData)
+    fetchNews(initialPage)
     
   }
 

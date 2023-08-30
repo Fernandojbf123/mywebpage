@@ -1,0 +1,71 @@
+:root{
+    --primary: rgb(127, 31, 206);;
+    --secondary: rgb(224, 224, 224);
+}
+
+
+#animate-l-r, #animate-t-b{
+    position: relative;
+    font-size: 14vw;
+    color: var(--primary);
+    -webkit-text-stroke: 0.3vw var(--primary);
+    text-transform: uppercase;
+    line-height: 80%;
+}
+
+#animate-l-r::before, #animate-t-b::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-text-stroke: 0vw var(--primary);
+    overflow: hidden;
+}
+
+#animate-l-r::before {
+    animation: animate-l-r 4s linear infinite;
+}
+
+#animate-t-b::before{
+    animation: animate-t-b 4s linear infinite;
+}
+
+.closeIntroModal {
+    transform: translate(0,-100%);
+    transition: all 1s
+}
+
+
+@keyframes animate-t-b {
+    
+    0%,100%{
+        width: 100%;
+        color:var(--secondary)
+    }
+
+    0%, 10%{
+        height: 0%;
+    }
+    70%, 90%{
+        height: 100%;
+        
+    }
+}
+
+@keyframes animate-l-r {
+
+    0%,100%{
+        height: 100%;
+        color:var(--secondary);
+    }
+
+    0%{
+        width: 0%;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+

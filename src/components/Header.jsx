@@ -1,4 +1,5 @@
 
+import AnimateLetter from './BelloDev/AnimateLetter'
 import ImgHam from '/bx-menu.svg'
 
 const Header = ({setModal}) => {
@@ -34,6 +35,7 @@ const Header = ({setModal}) => {
             </div>
            
         </div>
+
     </header>
 
    

@@ -8,6 +8,7 @@ const NewsProvider = ({children}) => {
     const [hasData, setHasData] = useState(false)
     const [currentPage, setCurrentPage] = useState(1)
     const [newsData, setNewsData] = useState({})
+    const [totalResults, setTotalResults] = useState(0)
     const [message, setMessage] = useState("Select a category and click search");
 
     const [formData, setFormData] = useState({
@@ -20,14 +21,15 @@ const NewsProvider = ({children}) => {
         setFormData({...formData, [e.target.name]: e.target.value})
     }
 
-    async function fetchNews (formData) {
+    async function fetchNews (page) {
         const {category} = formData;
         const API_KEY = import.meta.env.VITE_NEWS_KEY;
-        const url = `https://newsapi.org/v2/top-headlines?&country=Mx&category=${category}&pageSize=20&page=${currentPage}&apiKey=${API_KEY}`
+        const url = `https://newsapi.org/v2/top-headlines?&country=US&category=${category}&pageSize=20&page=${page}&apiKey=${API_KEY}`
         let controller = new AbortController();
         setIsLoading(true)
         setHasData(false)
         setMessage("")
+        setTotalResults(0)
         try {
             let response = await fetch (url,{signal: controller.signal})
             let result = await response.json()
@@ -38,11 +40,13 @@ const NewsProvider = ({children}) => {
             }
             setHasData(true)
             setNewsData(mappedData(result))
+            setTotalResults(result.totalResults)
         } catch (error) {
             console.log(error)
             setHasData(false)
             setMessage("Could not connect to News data base :(")
             setNewsData([])
+            
         }
         finally{
             setIsLoading(false)
@@ -54,10 +58,9 @@ const NewsProvider = ({children}) => {
     function mappedData (resultFromAPI) {  
         
         let data = resultFromAPI.articles.map ( article => {
-
-            // if /img_not_available.png
-
+            
             return { 
+
                 title: article.title,
                 source: article.source.name,
                 publishedAt: article.publishedAt,
@@ -69,6 +72,12 @@ const NewsProvider = ({children}) => {
     }
     
 
+    function updateCurrentPage (pageNumber) {
+        setCurrentPage(pageNumber)
+    }
+
+    
+
     return (
         <NewsContext.Provider
             value={{
@@ -78,8 +87,10 @@ const NewsProvider = ({children}) => {
                 isLoading,
                 hasData,
                 newsData,
+                totalResults,
                 currentPage,
                 message,
+                updateCurrentPage,
             }}
         >
             {children}
