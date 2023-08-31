@@ -41,13 +41,19 @@ const NewsProvider = ({children}) => {
                 setMessage("No results found for this category")
                 return
             }
+
+            if (result.status==="error"){
+                setMessage(result.message)
+                return
+            }
+
             setHasData(true)
             setNewsData(mappedData(result))
             setTotalResults(result.totalResults)
         } catch (error) {
             console.log(error)
             setHasData(false)
-            setMessage("Could not connect to News data base :(")
+            setMessage("Could not connecto to API.")
             setNewsData([])
             
         }
@@ -59,7 +65,7 @@ const NewsProvider = ({children}) => {
     }
 
     function mappedData (resultFromAPI) {  
-        
+
         let data = resultFromAPI.articles.map ( article => {
 
             return { 

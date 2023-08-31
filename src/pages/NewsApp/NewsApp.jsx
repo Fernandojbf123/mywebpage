@@ -25,17 +25,3 @@ const NewsApp = () => {
 }
 
 export default NewsApp
-
-//GET https://newsapi.org/v2/top-headlines?category=${}&country=${country}&pageSize=20&apiKey=API_KEY
-
-// category = [
-// "business",
-// "entertainment",
-// "general",
-// "health",
-// "sciences",
-// "ports",
-// "technology"]
-
-//https://newsapi.org/v2/top-headlines?q=Trump&category=health&country=US&pageSize=10&page=2&apiKey=02bf41cf6fa44a829979449f2bbc611a
-//https://newsapi.org/v2/top-headlines?category=health&country=US&pageSize=10&page=4&apiKey=02bf41cf6fa44a829979449f2bbc611a

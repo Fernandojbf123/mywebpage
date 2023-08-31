@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import "./AnimateLetter.css"
 
 const AnimateLetter = ({letter, animationDirection}) => {
