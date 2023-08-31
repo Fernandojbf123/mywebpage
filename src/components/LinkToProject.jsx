@@ -17,7 +17,7 @@ const LinkToProject = ({href, name, bgColor, animate}) => {
   
     return (
 
-      <div className="md:w-2/6 w-4/5">
+      <div className="md:w-full">
           <Link
               to={href}>
               <p className={`text1 w-full h-10 ${bgColor} text-2xl flex justify-center items-center rounded-md hover:bg-yellow-100 transition-colors ease-in-out ${bounce && "animate-bounce"}`}

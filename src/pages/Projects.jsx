@@ -10,12 +10,12 @@ const Projects = () => {
   
   return (
     
-    <div className='w-full min-h-screen h-auto flex flex-col items-center text-center md:gap-3 gap-2'>
-        <div className="md:w-2/6 md:[&>p]:text-gray-600 [&>p]:text-gray-200">
+    <div className='w-full min-h-screen h-auto flex flex-col items-center md:gap-3 gap-2'>
+        <div className="md:w-2/6 md:[&>p]:text-gray-600 [&>p]:text-gray-200 text-center">
           <p className=' text1 mt-2'>@bellodev</p>
           <h1 className='md:text-gray-600 text1 md:text-xl mt-2 text-gray-200'>Projects using React & JavaScript</h1>
           <h2 className='md:text-gray-600 text2 md:text-2xl mt-2 text-gray-200'>Hello and welcome</h2>
-          <p className='text-justify mt-2 px-5 font-bold'>Here you will find links to all the projects I've made as frontend developer. I hope you enjoy some of them :)</p>
+          <p className='text-justify m-2 rounded-xl px-5 font-bold bg-slate-200/60 backdrop-blur-md'>Here you will find links to all the projects I've made as frontend developer. I hope you enjoy some of them :)</p>
 
           <p className="mt-3 text2">If you'd like to share my portafolio just click the icons</p>
           
@@ -37,6 +37,9 @@ Hey, this is a great frontend developer we should be working with :D ' >
           </div>  
         </div>
 
+
+        <div className='text-center md:w-2/6 mx-2 mb-5 p-5 rounded-xl bg-slate-200/20 backdrop-blur-md flex flex-col gap-2'>
+        
         <TitleOfProjectGroup 
           title = {"GAMES"}
           textColor={"text-purple-500"}/>
@@ -114,11 +117,8 @@ Hey, this is a great frontend developer we should be working with :D ' >
           animate={false}
         />
 
-      <TitleOfProjectGroup 
-        title={"Interviews request: AVAILABLE SOON"}
-        textColor={"text-purple-500"}/>
-        
-
+        <p className='text-slate-200 text-2xl font-serif font-bold my-5 text-justify p-2 bg-gray-600/40 rounded-xl'>{`I will be uploading solutions to interviews every week`}</p>
+        </div>
     
 
         {/* <div className="md:w-2/6 w-4/5">
