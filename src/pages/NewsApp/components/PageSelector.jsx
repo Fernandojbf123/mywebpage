@@ -20,14 +20,12 @@ const PageSelector = () => {
       e.preventDefault()
       const clickedPage = e.target.value
       await updateCurrentPage(clickedPage)
-      console.log(currentPage)
       await fetchNews(clickedPage)
     }
 
     async function nextOrPreviousPage  (e){
       e.preventDefault()
       const clickedPage = e.target.value
-      console.log(clickedPage)
       await updateCurrentPage(clickedPage)
       await fetchNews(clickedPage)
     }

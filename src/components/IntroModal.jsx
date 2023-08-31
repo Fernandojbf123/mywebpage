@@ -7,7 +7,6 @@ const IntroModal = () => {
 
 
     setTimeout ( ( ) => {
-        console.log("time ended")
         setClose(true)
     },[4200])
 
