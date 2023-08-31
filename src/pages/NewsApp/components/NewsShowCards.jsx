@@ -23,7 +23,7 @@ const NewsShowCards = () => {
                         key={news.title}
                         title={news.title}
                         source={news.source}
-                        publishedAt={news.publishedAt.slice(0,10)}
+                        publishedAt={news?.publishedAt?.slice(0,10)}
                         srcImg={news.srcImg}
                         srcURL={news.srcURL}
                     />

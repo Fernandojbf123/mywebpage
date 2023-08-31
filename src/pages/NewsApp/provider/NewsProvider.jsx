@@ -1,8 +1,10 @@
 import { createContext, useState } from "react";
 
 const NewsContext = createContext();
+// this context is used by the hook useNewsProvider
 
 const NewsProvider = ({children}) => {
+
 
     const [isLoading, setIsLoading] = useState(false)
     const [hasData, setHasData] = useState(false)
@@ -22,6 +24,7 @@ const NewsProvider = ({children}) => {
     }
 
     async function fetchNews (page) {
+        //this function fetch data from API
         const {category} = formData;
         const API_KEY = import.meta.env.VITE_NEWS_KEY;
         const url = `https://newsapi.org/v2/top-headlines?&country=US&category=${category}&pageSize=20&page=${page}&apiKey=${API_KEY}`
@@ -58,9 +61,8 @@ const NewsProvider = ({children}) => {
     function mappedData (resultFromAPI) {  
         
         let data = resultFromAPI.articles.map ( article => {
-            
-            return { 
 
+            return { 
                 title: article.title,
                 source: article.source.name,
                 publishedAt: article.publishedAt,
@@ -68,7 +70,10 @@ const NewsProvider = ({children}) => {
                 srcURL: article.url,
             }
         })
-        return data
+        //Found out that sometimes API returns null for some news
+        let filteredData = data.filter( idata => idata.title != null)
+
+        return filteredData
     }
     
 
@@ -76,7 +81,6 @@ const NewsProvider = ({children}) => {
         setCurrentPage(pageNumber)
     }
 
-    
 
     return (
         <NewsContext.Provider
