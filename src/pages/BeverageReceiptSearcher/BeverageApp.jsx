@@ -1,6 +1,5 @@
 
-const MemoramaApp = () => {
-
+const BeverageApp = () => {
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
 
@@ -10,10 +9,10 @@ const MemoramaApp = () => {
         <iframe
             width={windowWidth}
             height={windowHeight}
-            src="https://inquisitive-mermaid-359825.netlify.app/">
+            src="https://fantastic-torrone-ced0f5.netlify.app/">
         </iframe>
     </div>
   )
 }
 
-export default MemoramaApp
+export default BeverageApp
