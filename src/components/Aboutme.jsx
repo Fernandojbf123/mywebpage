@@ -39,9 +39,9 @@ const Aboutme = () => {
           </div>
           <div className="w-full flex flex-col justify-center align-middle md:w-4/6">
             <p className="md:text-4xl text-2xl font-bold text-gray-600 md:text-left text-center">I'm <span className="text-underline">Fernando Bello</span></p>
-            <p className="font-bold text-gray-600 mt-5 md:text-2xl md:w-full px-5 text-justify">an engineer since 2009 🔧 with great experience in <span className="text-underline">REACT</span>, HTML, CSS and JAVASCRIPT.</p>
+            <p className="font-bold text-gray-600 mt-5 md:text-2xl md:w-full px-5 text-justify">an engineer since 2009 🔧 with great experience in <span className="text-underline">REACT</span>, HTML, CSS and JAVASCRIPt with knowledge using context API, custom hooks, API Fetching and focusing on good practices to build reusable components with readable and understandable code.</p>
             <div className="w-full flex flex-col justify-center items-center mt-10">
-              <p className="text1">Want to know more about me and what am I doing?</p>
+              <p className="text1 px-5 text-justify">Want to know more about me and what am I doing?</p>
               <Link 
                 className="md:w-1/5 w-3/5 mt-2 rounded-xl bg-yellow-300 text-center text1 hover:bg-yellow-500 "
                 to="/details/aboutme"
@@ -58,16 +58,15 @@ const Aboutme = () => {
           <div className="w-full flex flex-col gap-3
                           md:flex-row">
             <ul className="w-4/5 self-center md:w-4/6 [&>li]:text-gray-700 [&>li]:py-1 [&>li]:px-3 [&>li]:mt-1 [&>li]:rounded-md">
-             <li className="highlighted text1">HTML, CSS, JS</li>
-             <li className="highlighted text1">React, Remix-Run, NextJS</li>
-             <li className="highlighted text1">TailwindCSS & Bootstrap</li>              
-             <li className="highlighted text1">SQL, PostgreSQL, MongoDB, Cloudinary</li>                   
-             <li className="highlighted text1">WordPress, Strapi</li>
+             <li className="highlighted text1">HTML, CSS, JS, Astro</li>
+             <li className="highlighted text1">React, Remix-Run, NextJS, WordPress</li>
+             <li className="highlighted text1">TailwindCSS, Bootstrap, MUI</li>              
+             <li className="highlighted text1">MySQL, PostgreSQL, MongoDB, Cloudinary</li>                   
+             <li className="highlighted text1">Strapi, Prisma</li>
              <li className="highlighted text1">NodeJS, PostMan</li>
              <li className="highlighted text1">GitHub, GitLab, Jira</li>
              <li className="highlighted text1">Matlab</li>
             </ul>
-
 
             <ul className="w-4/5 self-center md:w-4/6 [&>li]:text-gray-700 [&>li]:py-1 [&>li]:px-3 [&>li]:mt-1 [&>li]:rounded-md">
               <li className="highlighted text1">English C1/C2</li>
@@ -108,3 +107,4 @@ const Aboutme = () => {
   )
 }
 export default Aboutme
+
