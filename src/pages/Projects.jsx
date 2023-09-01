@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { FacebookIcon, FacebookShareButton, TwitterIcon, TwitterShareButton, WhatsappIcon, WhatsappShareButton } from 'react-share'
 import LinkToProject from '../components/LinkToProject'
 import TitleOfProjectGroup from '../components/TitleOfProjectGroup'
@@ -12,12 +10,12 @@ const Projects = () => {
     
     <div className='w-full min-h-screen h-auto flex flex-col items-center md:gap-3 gap-2'>
         <div className="md:w-2/6 md:[&>p]:text-gray-600 [&>p]:text-gray-200 text-center">
-          <p className=' text1 mt-2'>@bellodev</p>
-          <h1 className='md:text-gray-600 text1 md:text-xl mt-2 text-gray-200'>Projects using React & JavaScript</h1>
-          <h2 className='md:text-gray-600 text2 md:text-2xl mt-2 text-gray-200'>Hello and welcome</h2>
-          <p className='text-justify m-2 rounded-xl px-5 font-bold bg-slate-200/60 backdrop-blur-md'>Here you will find links to all the projects I've made as frontend developer. I hope you enjoy some of them :)</p>
+          <p className=' text1 mt-2'>{`@bellodev`}</p>
+          <h1 className='md:text-gray-600 text1 md:text-xl mt-2 text-gray-200'>{`Projects using React & JavaScript`}</h1>
+          <h2 className='md:text-gray-600 text2 md:text-2xl mt-2 text-gray-200'>{`Hello and welcome`}</h2>
+          <p className='text-justify m-2 rounded-xl px-5 font-bold bg-slate-200/60 backdrop-blur-md'>{`Here you will find links to all the projects I've made as frontend developer. I hope you enjoy some of them :)`}</p>
 
-          <p className="mt-3 text2">If you'd like to share my portafolio just click the icons</p>
+          <p className="mt-3 text2">{`If you'd like to share my portafolio just click the icons`}</p>
           
           <div className='mt-3 flex flex-row gap-2 justify-center'>
             <FacebookShareButton url='https://www.bellodev.com' quote="This web page is awesome">

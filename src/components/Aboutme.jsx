@@ -38,7 +38,7 @@ const Aboutme = () => {
             </div>
           </div>
           <div className="w-full flex flex-col justify-center align-middle md:w-4/6">
-            <p className="md:text-4xl text-2xl font-bold text-gray-600 md:text-left text-center">I'm <span className="text-underline">Fernando Bello</span></p>
+            <p className="md:text-4xl text-2xl font-bold text-gray-600 md:text-left text-center">{`I'm`}<span className="text-underline">Fernando Bello</span></p>
             <p className="font-bold text-gray-600 mt-5 md:text-2xl md:w-full px-5 text-justify">an engineer since 2009 🔧 with great experience in <span className="text-underline">REACT</span>, HTML, CSS and JAVASCRIPt with knowledge using context API, custom hooks, API Fetching and focusing on good practices to build reusable components with readable and understandable code.</p>
             <div className="w-full flex flex-col justify-center items-center mt-10">
               <p className="text1 px-5 text-justify">Want to know more about me and what am I doing?</p>
