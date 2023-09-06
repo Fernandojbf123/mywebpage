@@ -75,9 +75,23 @@ Hey, this is a great frontend developer we should be working with :D ' >
         />
 
       <LinkToProject
+          href={"/foodservice"}
+          name={"Food service app"}
+          bgColor={"bg-green-500"}
+          animate={false}
+        />
+
+      <LinkToProject
+          href={"/foodserviceadmin"}
+          name={"Food service Admin"}
+          bgColor={"bg-green-500"}
+          animate={false}
+        />
+
+      <LinkToProject
           href={"/news"}
           name={"News App"}
-          bgColor={"bg-green-500"}
+          bgColor={"bg-green-400"}
           animate={false}
         />
 

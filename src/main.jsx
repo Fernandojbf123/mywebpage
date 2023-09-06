@@ -19,6 +19,8 @@ import RandomDataFromAPI from './pages/interviews/RandomDataFromAPI'
 import WeatherApp from './pages/WeatherApp/WeatherApp'
 import NewsApp from './pages/NewsApp/NewsApp'
 import BeverageApp from './pages/BeverageReceiptSearcher/BeverageApp'
+import FoodServiceApp from './pages/FoodServiceApp/FoodServiceApp'
+import FoodServiceAdmin from './pages/FoodServiceApp/FoodServiceAdmin'
 
 const router = createBrowserRouter([
   {
@@ -77,6 +79,14 @@ const router = createBrowserRouter([
   {
     path:'/news',
     element: <NewsApp />,
+  },
+  {
+    path:'/foodservice',
+    element: <FoodServiceApp />,
+  },
+  {
+    path:'/foodserviceadmin',
+    element: <FoodServiceAdmin />,
   },
   
   {
